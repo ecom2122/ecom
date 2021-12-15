@@ -5,6 +5,7 @@
 spring:
   cloud:
     config:
+      enabled: false
       fail-fast: true
       retry:
         initial-interval: 1000
