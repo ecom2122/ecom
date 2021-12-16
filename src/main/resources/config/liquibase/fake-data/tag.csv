@@ -1,5 +1,9 @@
-id;name;color
-1;Bio;22D05E
-2;Sans gluten;F9EF7F
-3;Végétarien;61CA85
-4;Sans sucre;DDDDDD
+ID;NAME;COLOR
+1;Sans gluten;FDE63B
+2;Végétarien;C3F381
+3;Sans sucre;DDDDDD
+4;Halal;FFB74F
+5;Bio;77D378
+6;Label Rouge;EA5C5C
+7;Produit Locaux;DE995B
+8;Sans Conservateur;DDDDDD

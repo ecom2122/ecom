@@ -322,7 +322,8 @@ public class OrderResource {
                             finalUnitPrice = promoCode.applyTo(productBasePrice);
                             po.promoCodeType(promoCode.getUnit()).promoCodeValue(promoCode.getValue());
                         }
-                        po.setPrice(finalUnitPrice.multiply(new BigDecimal(po.getQuantity())));
+                        final BigDecimal linePrice = finalUnitPrice.multiply(new BigDecimal(po.getQuantity()));
+                        po.setPrice(linePrice.doubleValue() >= 0 ? linePrice : BigDecimal.ZERO);
                         return po.getPrice();
                     })
                     .reduce(BigDecimal.ZERO, BigDecimal::add)

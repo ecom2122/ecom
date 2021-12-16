@@ -43,30 +43,6 @@
           <li>
             <a
               class="dropdown-item"
-              routerLink="address"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              (click)="collapseNavbar()"
-            >
-              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.address">Address</span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="dropdown-item"
-              routerLink="order"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              (click)="collapseNavbar()"
-            >
-              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.order">Order</span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="dropdown-item"
               routerLink="product"
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
@@ -74,54 +50,6 @@
             >
               <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
               <span jhiTranslate="global.menu.entities.product">Product</span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="dropdown-item"
-              routerLink="promotion"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              (click)="collapseNavbar()"
-            >
-              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.promotion">Promotion</span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="dropdown-item"
-              routerLink="carts"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              (click)="collapseNavbar()"
-            >
-              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.cart">Cart</span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="dropdown-item"
-              routerLink="product-order"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              (click)="collapseNavbar()"
-            >
-              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.productOrder">Product Order</span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="dropdown-item"
-              routerLink="product-cart"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              (click)="collapseNavbar()"
-            >
-              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.productCart">Product Cart</span>
             </a>
           </li>
           <li>
@@ -139,6 +67,42 @@
           <li>
             <a
               class="dropdown-item"
+              routerLink="tag"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="collapseNavbar()"
+            >
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span jhiTranslate="global.menu.entities.tag">Tag</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="promotion"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="collapseNavbar()"
+            >
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span jhiTranslate="global.menu.entities.promotion">Promotion</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="promotional-code"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="collapseNavbar()"
+            >
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span jhiTranslate="global.menu.entities.promotionalCode">Promotional Code</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
               routerLink="recipe"
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
@@ -151,13 +115,13 @@
           <li>
             <a
               class="dropdown-item"
-              routerLink="tag"
+              routerLink="order"
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
               (click)="collapseNavbar()"
             >
               <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.tag">Tag</span>
+              <span jhiTranslate="global.menu.entities.order">Order</span>
             </a>
           </li>
           <li>
@@ -175,15 +139,52 @@
           <li>
             <a
               class="dropdown-item"
-              routerLink="promotional-code"
+              routerLink="address"
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
               (click)="collapseNavbar()"
             >
               <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
-              <span jhiTranslate="global.menu.entities.promotionalCode">Promotional Code</span>
+              <span jhiTranslate="global.menu.entities.address">Address</span>
             </a>
           </li>
+          <!--          <li>-->
+          <!--            <a-->
+          <!--              class="dropdown-item"-->
+          <!--              routerLink="carts"-->
+          <!--              routerLinkActive="active"-->
+          <!--              [routerLinkActiveOptions]="{ exact: true }"-->
+          <!--              (click)="collapseNavbar()"-->
+          <!--            >-->
+          <!--              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>-->
+          <!--              <span jhiTranslate="global.menu.entities.cart">Cart</span>-->
+          <!--            </a>-->
+          <!--          </li>-->
+          <!--          <li>-->
+          <!--            <a-->
+          <!--              class="dropdown-item"-->
+          <!--              routerLink="product-order"-->
+          <!--              routerLinkActive="active"-->
+          <!--              [routerLinkActiveOptions]="{ exact: true }"-->
+          <!--              (click)="collapseNavbar()"-->
+          <!--            >-->
+          <!--              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>-->
+          <!--              <span jhiTranslate="global.menu.entities.productOrder">Product Order</span>-->
+          <!--            </a>-->
+          <!--          </li>-->
+          <!--          <li>-->
+          <!--            <a-->
+          <!--              class="dropdown-item"-->
+          <!--              routerLink="product-cart"-->
+          <!--              routerLinkActive="active"-->
+          <!--              [routerLinkActiveOptions]="{ exact: true }"-->
+          <!--              (click)="collapseNavbar()"-->
+          <!--            >-->
+          <!--              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>-->
+          <!--              <span jhiTranslate="global.menu.entities.productCart">Product Cart</span>-->
+          <!--            </a>-->
+          <!--          </li>-->
+
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </ul>
       </li>

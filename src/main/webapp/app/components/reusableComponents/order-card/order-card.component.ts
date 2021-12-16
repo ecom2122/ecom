@@ -14,10 +14,7 @@ export class OrderCardComponent {
   }
 
   getDecimalsOfPrice(price?: number): string {
-    const b = price!.toString().split('.');
-    if (b[1].length <= 1) {
-      return b[1] + '0';
-    }
+    const b = price!.toFixed(2).toString().split('.');
     return b[1];
   }
 }

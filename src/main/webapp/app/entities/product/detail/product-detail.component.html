@@ -128,10 +128,6 @@
             <span>{{ product.quantity }}</span>
           </div>
           <div *jhiHasAnyAuthority="'ROLE_ADMIN'">
-            <span jhiTranslate="ecomApp.product.version">Version</span>
-            <span>{{ product.version }}</span>
-          </div>
-          <div *jhiHasAnyAuthority="'ROLE_ADMIN'">
             <span jhiTranslate="ecomApp.product.weightUnit">Weight Unit</span>
             <span jhiTranslate="{{ 'ecomApp.WeightUnit.' + product.weightUnit }}">{{ product.weightUnit }}</span>
           </div>

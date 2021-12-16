@@ -86,6 +86,9 @@ export class PaymentComponent implements OnInit {
         this.totalPrice = results[0] - this.promoCodeSavings;
       });
     }
+    if (this.totalPrice < 0) {
+      this.totalPrice = 0;
+    }
   }
 
   calcTotalSaved(): void {

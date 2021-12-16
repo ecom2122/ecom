@@ -1,11 +1,37 @@
-id;name
-1;Table
-2;open-source
-3;a
-4;Refined applications e-commerce
-5;c
-6;XML Chips Champagne-Ardenne
-7;Steel transmitting Languedoc-Roussillon
-8;harness Bourgogne Hat
-9;a mesh
-10;Analyste array
+ID;NAME;PARENT_ID
+1;Fruits et Legumes;
+2;Fruits;1
+3;Légumes;1
+4;Fruits frais;2
+5;Fruits secs;2
+6;Herbes aromatiques;1
+7;Viandes et Poissons;
+8;Viandes;7
+9;Poissons;7
+10;Poulet;8
+11;Boeuf;8
+12;Porc;8
+13;Fruits de mer;7
+14;Produits Laitiers;
+15;Lait et œuf;14
+16;Beurre et crème;14
+17;Fromages;14
+18;Desserts;14
+19;Chèvre;17
+20;Vache;17
+21;Brebis;17
+22;Epicerie;
+23;Apéritifs;22
+24;Biscuits;22
+25;Condiments;22
+26;Chocolat et confiseries;22
+27;Boissons;
+28;Jus de fruit;27
+29;Sodas;27
+30;Alcools;27
+31;Bierre;27
+32;Vins et champagnes;27
+33;Pain et pattiserie;
+34;Pâtiserie fraîche;33
+35;Boulangerie;33
+36;Produits Locaux;
