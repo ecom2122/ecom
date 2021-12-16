@@ -20,11 +20,10 @@
         <div>
           <div>
             <img
-              [src]="product.imagePath"
-              srcset="../../../../content/images/default-products.png"
+              srcset="{{ product.imagePath }} ../../../../content/images/default-products.png"
               alt="Image produit"
-              width="128"
-              height="128"
+              src="{{ product.imagePath }}"
+              onerror="this.onerror=null; this.src='../../../../content/images/default-products.png'"
             />
           </div>
           <div [ngClass]="{ 'ecom-detail-product-oldprice': this.promotionService.inPromotion(product) }">
