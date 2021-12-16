@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
  * A Product.
  */
 @Entity
-@Table(name = "product")
+@Table(name = "product", indexes = { @Index(columnList = "name"), @Index(columnList = "origin"), @Index(columnList = "brand") })
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -78,7 +78,8 @@ public class Product implements Serializable {
     @JoinTable(
         name = "rel_product__tags",
         joinColumns = @JoinColumn(name = "product_id"),
-        inverseJoinColumns = @JoinColumn(name = "tags_id")
+        inverseJoinColumns = @JoinColumn(name = "tags_id"),
+        indexes = { @Index(columnList = "product_id"), @Index(columnList = "tags_id") }
     )
     @JsonIgnoreProperties(value = { "products", "preferencesOfs" }, allowSetters = true)
     private Set<Tag> tags = new HashSet<>();

@@ -139,7 +139,6 @@ export class PaymentComponent implements OnInit {
       },
       () => {
         this.isLoadingPromoCode = false;
-        // TODO Afficher une alerte indiquant que le tag est invalide.
       }
     );
   }
