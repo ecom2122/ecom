@@ -58,6 +58,9 @@ export class ProductUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ product }) => {
+      if (product.id == null) {
+        product.version = 1;
+      }
       this.updateForm(product);
 
       this.loadRelationshipsOptions();
